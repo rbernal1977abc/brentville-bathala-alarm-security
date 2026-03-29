@@ -2,30 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brentville Bathala Alarm Security Systems | Protecting Filipino Homes & Businesses</title>
-    <meta name="description" content="Brentville Bathala Alarm Security Systems - Premium security solutions for Filipino households and businesses. 24/7 monitoring powered by SITS Command Center.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Bathala | Mediterranean Home Village Protection | Premium Security Systems</title>
+    <meta name="description" content="Bathala Alarm Security Systems — Mediterranean-inspired protection for your home village. 24/7 SITS command center monitoring, perimeter security, and family safety.">
     
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Fonts: Mediterranean elegance + modern sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Icons -->
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Vercel Analytics with Project ID -->
+    <!-- Vercel Analytics (preserved) -->
     <script>
         window.va = window.va || function() {(window.va.q = window.va.q || []).push(arguments);};
     </script>
     <script defer src="https://va.vercel-scripts.com/v1/analytics.js" data-project-id="prj_qyN0Mq96R307kckFIaVMbRdPIscd"></script>
     
     <style>
+        /* --- MEDITERRANEAN SPANISH COLOR THEME --- */
         :root {
-            --primary: #1e3a8a;
-            --secondary: #dc2626;
-            --accent: #f59e0b;
-            --dark: #0f172a;
-            --light: #f8fafc;
-            --gray: #64748b;
+            --terracotta: #c96e2e;      /* warm spanish clay */
+            --spain-red: #b23c1c;        /* deep mediterranean red */
+            --sunstone: #e9b35f;         /* golden hour light */
+            --olive-green: #6b8c5c;      /* spanish olive groves */
+            --sand-cream: #fff9f0;       /* warm coastal plaster */
+            --cortijo-white: #fef7e8;
+            --charcoal-soft: #2c2b28;
+            --stone-gray: #7c6e5e;
+            --sea-blue: #2c6e6b;         /* mediterranean sea accent */
+            --azulejo-blue: #3b7c74;
         }
 
         * {
@@ -36,30 +41,31 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            color: var(--dark);
-            overflow-x: hidden;
+            background-color: var(--sand-cream);
+            color: var(--charcoal-soft);
+            line-height: 1.5;
+            scroll-behavior: smooth;
         }
 
-        h1, h2, h3, h4 {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 700;
+        h1, h2, h3, h4, .logo-text, .nav-links a, .cta-button, .service-card h3 {
+            font-family: 'Playfair Display', serif;
         }
 
-        /* Navigation */
+        /* Navigation — terracotta & rustic elegance */
         nav {
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            background: rgba(255, 248, 235, 0.94);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
             z-index: 1000;
-            padding: 1rem 0;
+            padding: 0.9rem 0;
+            border-bottom: 1px solid rgba(201, 110, 46, 0.2);
         }
 
         .nav-container {
-            max-width: 1200px;
+            max-width: 1280px;
             margin: 0 auto;
             padding: 0 2rem;
             display: flex;
@@ -70,140 +76,151 @@
         .logo {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 0.65rem;
             font-weight: 700;
-            font-size: 1.25rem;
-            color: var(--primary);
+            font-size: 1.35rem;
+            color: var(--terracotta);
         }
 
         .logo i {
-            color: var(--secondary);
-            font-size: 1.5rem;
+            color: var(--spain-red);
+            font-size: 1.8rem;
         }
 
         .nav-links {
             display: flex;
-            gap: 2rem;
+            gap: 2.2rem;
             list-style: none;
         }
 
         .nav-links a {
             text-decoration: none;
-            color: var(--dark);
             font-weight: 500;
-            transition: color 0.3s;
+            color: var(--charcoal-soft);
+            transition: 0.2s ease;
+            font-size: 1rem;
+            letter-spacing: 0.3px;
         }
 
         .nav-links a:hover {
-            color: var(--primary);
+            color: var(--terracotta);
+            border-bottom: 2px solid var(--sunstone);
+            padding-bottom: 4px;
         }
 
         .mobile-menu {
             display: none;
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             cursor: pointer;
+            color: var(--terracotta);
         }
 
-        /* Hero Section */
+        /* Hero: mediterranean warmth & texture */
         .hero {
-            margin-top: 70px;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
+            margin-top: 78px;
+            background: linear-gradient(115deg, rgba(44, 43, 40, 0.82), rgba(107, 140, 92, 0.7)), url('https://images.unsplash.com/photo-1596036707204-ef1c1b5c9e30?auto=format&fit=crop&w=2000');
+            background-size: cover;
+            background-position: center 35%;
             color: white;
-            padding: 6rem 2rem;
+            padding: 5rem 2rem;
             position: relative;
-            overflow: hidden;
         }
 
-        .hero::before {
+        .hero::after {
             content: '';
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
             bottom: 0;
-            background: url('https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=2000') center/cover;
-            opacity: 0.2;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background: linear-gradient(to top, var(--sand-cream), transparent);
         }
 
         .hero-container {
             max-width: 1200px;
             margin: 0 auto;
             position: relative;
-            z-index: 1;
+            z-index: 2;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 4rem;
+            gap: 3rem;
             align-items: center;
         }
 
         .hero-content h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
+            font-size: 3.2rem;
+            margin-bottom: 1.2rem;
             line-height: 1.2;
+            font-weight: 800;
         }
 
         .hero-content .highlight {
-            color: var(--accent);
+            color: var(--sunstone);
+            border-bottom: 3px solid var(--spain-red);
+            display: inline-block;
         }
 
         .hero-content p {
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             margin-bottom: 2rem;
-            opacity: 0.9;
+            opacity: 0.92;
+            font-weight: 400;
         }
 
         .hero-badges {
             display: flex;
             gap: 1rem;
-            margin-bottom: 2rem;
+            margin-bottom: 1.8rem;
             flex-wrap: wrap;
         }
 
         .badge {
-            background: rgba(255,255,255,0.1);
-            padding: 0.5rem 1rem;
-            border-radius: 50px;
-            font-size: 0.875rem;
+            background: rgba(255,249,235,0.2);
+            backdrop-filter: blur(4px);
+            padding: 0.5rem 1.1rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 500;
             display: flex;
             align-items: center;
             gap: 0.5rem;
+            font-family: 'Inter', sans-serif;
         }
 
         .cta-button {
             display: inline-flex;
             align-items: center;
-            gap: 0.5rem;
-            background: var(--secondary);
+            gap: 0.7rem;
+            background: var(--spain-red);
             color: white;
-            padding: 1rem 2rem;
-            border-radius: 50px;
+            padding: 0.9rem 2rem;
+            border-radius: 60px;
             text-decoration: none;
             font-weight: 600;
-            transition: transform 0.3s, box-shadow 0.3s;
+            transition: all 0.25s ease;
             border: none;
-            cursor: pointer;
             font-size: 1rem;
+            box-shadow: 0 6px 14px rgba(178, 60, 28, 0.3);
         }
 
         .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(220, 38, 38, 0.4);
-        }
-
-        .hero-image {
-            position: relative;
+            background: var(--terracotta);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 24px rgba(201, 110, 46, 0.4);
         }
 
         .hero-image img {
             width: 100%;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            border-radius: 32px;
+            box-shadow: 0 20px 35px rgba(0,0,0,0.25);
+            border: 3px solid rgba(233, 179, 95, 0.6);
         }
 
-        /* Stats Section */
+        /* Stats (mediterranean vibe) */
         .stats {
-            background: var(--light);
+            background: var(--cortijo-white);
             padding: 3rem 2rem;
+            border-top: 1px solid #e9dccc;
         }
 
         .stats-container {
@@ -216,38 +233,41 @@
         }
 
         .stat-item h3 {
-            font-size: 2.5rem;
-            color: var(--primary);
-            margin-bottom: 0.5rem;
+            font-size: 2.6rem;
+            color: var(--sea-blue);
+            font-weight: 800;
+            margin-bottom: 0.3rem;
         }
 
         .stat-item p {
-            color: var(--gray);
+            color: var(--stone-gray);
             font-weight: 500;
+            letter-spacing: 0.3px;
         }
 
-        /* About Section */
+        /* About / Village story */
         .about {
-            padding: 6rem 2rem;
+            padding: 5rem 2rem;
             max-width: 1200px;
             margin: 0 auto;
         }
 
         .section-header {
             text-align: center;
-            margin-bottom: 4rem;
+            margin-bottom: 3.5rem;
         }
 
         .section-header h2 {
             font-size: 2.5rem;
-            color: var(--primary);
-            margin-bottom: 1rem;
+            color: var(--terracotta);
+            margin-bottom: 0.8rem;
+            font-weight: 700;
         }
 
         .section-header p {
-            color: var(--gray);
-            font-size: 1.125rem;
-            max-width: 600px;
+            color: var(--stone-gray);
+            font-size: 1.1rem;
+            max-width: 680px;
             margin: 0 auto;
         }
 
@@ -258,166 +278,125 @@
             align-items: center;
         }
 
-        .about-image {
-            position: relative;
-        }
-
         .about-image img {
             width: 100%;
-            border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            border-radius: 28px;
+            box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+            border: 1px solid #e2d6c2;
         }
 
         .about-content h3 {
             font-size: 2rem;
+            color: var(--olive-green);
             margin-bottom: 1rem;
-            color: var(--dark);
         }
 
         .about-content p {
-            margin-bottom: 1.5rem;
-            color: var(--gray);
-            line-height: 1.8;
+            margin-bottom: 1.4rem;
+            color: #3a3a36;
+            line-height: 1.6;
         }
 
-        .filipino-values {
+        .village-values {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-            margin-top: 2rem;
+            gap: 1.2rem;
+            margin-top: 1.5rem;
         }
 
         .value-item {
             display: flex;
             align-items: center;
-            gap: 0.75rem;
+            gap: 0.7rem;
+            background: #fef3e4;
+            padding: 0.6rem 1rem;
+            border-radius: 40px;
         }
 
         .value-item i {
-            color: var(--secondary);
-            font-size: 1.25rem;
+            color: var(--spain-red);
+            font-size: 1.2rem;
         }
 
-        /* Services Section */
-        .services {
-            background: var(--light);
-            padding: 6rem 2rem;
-        }
-
-        .services-container {
+        /* HERO PACKAGE: HOME VILLAGE PROTECTION (featured) */
+        .village-package-hero {
+            background: linear-gradient(145deg, #fff6ea, #fdebd0);
+            padding: 4rem 2rem;
+            border-radius: 48px;
+            margin: 2rem auto;
             max-width: 1200px;
-            margin: 0 auto;
+            box-shadow: 0 12px 32px rgba(0,0,0,0.05);
         }
 
-        .services-grid {
+        .village-card-premium {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .village-details {
+            flex: 1.5;
+        }
+
+        .village-details h2 {
+            font-size: 2.3rem;
+            color: var(--spain-red);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .village-details p {
+            font-size: 1.05rem;
+            margin: 1rem 0 1.5rem;
+            color: #2c2b28;
+        }
+
+        .village-feature-list {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            margin-top: 3rem;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.8rem;
+            margin-bottom: 2rem;
         }
 
-        .service-card {
-            background: white;
-            border-radius: 20px;
-            padding: 2.5rem;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-            transition: transform 0.3s, box-shadow 0.3s;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .service-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: var(--primary);
-            transform: scaleX(0);
-            transition: transform 0.3s;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-        }
-
-        .service-card:hover::before {
-            transform: scaleX(1);
-        }
-
-        .service-icon {
-            width: 60px;
-            height: 60px;
-            background: var(--primary);
-            color: white;
-            border-radius: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .service-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: var(--dark);
-        }
-
-        .service-card p {
-            color: var(--gray);
-            margin-bottom: 1.5rem;
-        }
-
-        .service-features {
+        .village-feature-list li {
             list-style: none;
-            margin-bottom: 1.5rem;
-        }
-
-        .service-features li {
-            padding: 0.5rem 0;
-            color: var(--gray);
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 10px;
+            background: white;
+            padding: 0.6rem 1rem;
+            border-radius: 60px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+            font-size: 0.9rem;
+            font-weight: 500;
         }
 
-        .service-features i {
-            color: var(--secondary);
+        .village-feature-list i {
+            color: var(--olive-green);
         }
 
-        .popular-badge {
-            position: absolute;
-            top: 1rem;
-            right: -2rem;
-            background: var(--accent);
-            color: white;
-            padding: 0.25rem 3rem;
-            transform: rotate(45deg);
-            font-size: 0.75rem;
-            font-weight: 600;
-        }
-
-        /* Monitoring Section */
-        .monitoring {
-            padding: 6rem 2rem;
-            background: linear-gradient(135deg, var(--dark) 0%, var(--primary) 100%);
-            color: white;
-            position: relative;
+        .village-img {
+            flex: 1;
+            border-radius: 32px;
             overflow: hidden;
+            box-shadow: 0 20px 35px rgba(0,0,0,0.1);
         }
 
-        .monitoring::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -20%;
-            width: 800px;
-            height: 800px;
-            background: rgba(255,255,255,0.03);
-            border-radius: 50%;
+        .village-img img {
+            width: 100%;
+            display: block;
+            transition: 0.3s;
+        }
+
+        /* monitoring section — Mediterranean blue & earth */
+        .monitoring {
+            padding: 5rem 2rem;
+            background: linear-gradient(115deg, #1d4e4a, #2a5f55);
+            color: white;
+            margin-top: 2rem;
         }
 
         .monitoring-container {
@@ -427,66 +406,58 @@
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
             align-items: center;
-            position: relative;
-            z-index: 1;
         }
 
         .monitoring-content h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .monitoring-content p {
-            font-size: 1.125rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
         }
 
         .monitoring-features {
             display: grid;
             gap: 1rem;
+            margin-top: 1.8rem;
         }
 
         .monitoring-feature {
             display: flex;
             align-items: center;
             gap: 1rem;
+            background: rgba(255,255,240,0.12);
             padding: 1rem;
-            background: rgba(255,255,255,0.1);
-            border-radius: 10px;
+            border-radius: 20px;
+            backdrop-filter: blur(2px);
         }
 
         .monitoring-feature i {
-            font-size: 1.5rem;
-            color: var(--accent);
-        }
-
-        .monitoring-image {
-            position: relative;
-        }
-
-        .monitoring-image img {
-            width: 100%;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            font-size: 1.7rem;
+            color: var(--sunstone);
         }
 
         .sits-logo {
             display: inline-flex;
             align-items: center;
-            gap: 0.5rem;
-            background: white;
-            color: var(--primary);
-            padding: 0.75rem 1.5rem;
-            border-radius: 50px;
-            font-weight: 600;
+            gap: 0.6rem;
+            background: #fdf4e3;
+            color: var(--terracotta);
+            padding: 0.7rem 1.5rem;
+            border-radius: 60px;
+            font-weight: 700;
             margin-top: 2rem;
         }
 
-        /* Gallery Section */
+        .monitoring-image img {
+            width: 100%;
+            border-radius: 28px;
+            box-shadow: 0 20px 30px rgba(0,0,0,0.25);
+            border: 2px solid #f3c682;
+        }
+
+        /* gallery (mediterranean village charm) */
         .gallery {
-            padding: 6rem 2rem;
-            background: var(--light);
+            padding: 5rem 2rem;
+            background: var(--cortijo-white);
         }
 
         .gallery-container {
@@ -497,27 +468,28 @@
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 1rem;
-            margin-top: 3rem;
+            gap: 1.3rem;
+            margin-top: 2.5rem;
         }
 
         .gallery-item {
             position: relative;
             overflow: hidden;
-            border-radius: 15px;
-            aspect-ratio: 1;
+            border-radius: 28px;
+            aspect-ratio: 1 / 1;
             cursor: pointer;
+            box-shadow: 0 8px 18px rgba(0,0,0,0.05);
         }
 
         .gallery-item img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: transform 0.3s;
+            transition: transform 0.5s ease;
         }
 
         .gallery-item:hover img {
-            transform: scale(1.1);
+            transform: scale(1.08);
         }
 
         .gallery-overlay {
@@ -525,209 +497,131 @@
             bottom: 0;
             left: 0;
             right: 0;
-            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
-            padding: 2rem 1rem 1rem;
+            background: linear-gradient(to top, rgba(107, 140, 92, 0.85), transparent);
+            padding: 1.5rem 1rem 0.8rem;
             color: white;
             opacity: 0;
             transition: opacity 0.3s;
+            font-weight: 600;
         }
 
         .gallery-item:hover .gallery-overlay {
             opacity: 1;
         }
 
-        /* Contact Section */
+        /* Contact - mediterranean terracotta */
         .contact {
-            padding: 6rem 2rem;
-            max-width: 800px;
+            padding: 5rem 2rem;
+            max-width: 900px;
             margin: 0 auto;
             text-align: center;
         }
 
         .contact-box {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
+            background: linear-gradient(125deg, #c96e2e, #b64a1e);
             color: white;
-            padding: 4rem 2rem;
-            border-radius: 30px;
-            box-shadow: 0 20px 60px rgba(30, 58, 138, 0.3);
+            padding: 3rem 2rem;
+            border-radius: 48px;
+            box-shadow: 0 30px 40px rgba(201, 110, 46, 0.35);
         }
 
         .contact-box h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
+            font-size: 2.2rem;
+            font-weight: 700;
         }
 
-        .contact-box p {
-            font-size: 1.125rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-        }
-
-        .phone-number {
+        .email-link {
             display: inline-flex;
             align-items: center;
-            gap: 1rem;
+            gap: 0.8rem;
             background: white;
-            color: var(--primary);
-            padding: 1.5rem 3rem;
-            border-radius: 50px;
-            font-size: 2rem;
+            color: var(--spain-red);
+            padding: 1rem 2rem;
+            border-radius: 60px;
+            font-size: 1.2rem;
             font-weight: 700;
             text-decoration: none;
-            transition: transform 0.3s, box-shadow 0.3s;
-            margin-bottom: 1rem;
+            margin: 1.5rem 0 0.5rem;
+            transition: 0.2s;
         }
 
-        .phone-number:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        .email-link:hover {
+            transform: scale(1.02);
+            background: #fff3e6;
         }
 
-        .contact-hours {
-            margin-top: 2rem;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255,255,255,0.2);
-            font-size: 0.875rem;
-            opacity: 0.8;
-        }
-
-        /* Footer */
+        /* footer rustic */
         footer {
-            background: var(--dark);
-            color: white;
-            padding: 3rem 2rem 1rem;
+            background: #2a241e;
+            color: #f3e9db;
+            padding: 2.5rem 2rem 1rem;
             text-align: center;
-        }
-
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .footer-brand {
-            margin-bottom: 2rem;
         }
 
         .footer-brand h3 {
             font-size: 1.5rem;
             margin-bottom: 0.5rem;
-        }
-
-        .footer-brand p {
-            opacity: 0.8;
+            color: var(--sunstone);
         }
 
         .footer-powered {
             display: flex;
             justify-content: center;
-            align-items: center;
             gap: 0.5rem;
-            margin-bottom: 2rem;
-            padding: 1rem;
-            background: rgba(255,255,255,0.05);
-            border-radius: 10px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 1.2rem auto;
+            padding: 0.6rem 1rem;
+            background: rgba(255,235,205,0.08);
+            border-radius: 60px;
+            width: fit-content;
         }
 
         .footer-bottom {
-            border-top: 1px solid rgba(255,255,255,0.1);
-            padding-top: 2rem;
-            margin-top: 2rem;
-            font-size: 0.875rem;
-            opacity: 0.6;
+            border-top: 1px solid rgba(255,220,170,0.2);
+            padding-top: 1.5rem;
+            margin-top: 1rem;
+            font-size: 0.8rem;
         }
 
-        .footer-bottom .designer {
-            color: var(--accent);
-            font-weight: 600;
-        }
-
-        /* Responsive */
+        /* responsive */
         @media (max-width: 968px) {
-            .nav-links {
-                display: none;
-            }
-
-            .mobile-menu {
-                display: block;
-            }
-
-            .hero-container,
-            .about-grid,
-            .monitoring-container {
-                grid-template-columns: 1fr;
-            }
-
-            .hero-content h1 {
-                font-size: 2rem;
-            }
-
-            .stats-container {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .gallery-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .filipino-values {
-                grid-template-columns: 1fr;
-            }
+            .nav-links { display: none; }
+            .mobile-menu { display: block; }
+            .hero-container, .about-grid, .monitoring-container, .village-card-premium { grid-template-columns: 1fr; flex-direction: column; }
+            .hero-content h1 { font-size: 2.3rem; }
+            .stats-container { grid-template-columns: repeat(2,1fr); }
+            .gallery-grid { grid-template-columns: repeat(2,1fr); }
+            .village-feature-list { grid-template-columns: 1fr; }
         }
 
         @media (max-width: 640px) {
-            .hero-content h1 {
-                font-size: 1.75rem;
-            }
-
-            .stats-container {
-                grid-template-columns: 1fr;
-            }
-
-            .phone-number {
-                font-size: 1.5rem;
-                padding: 1rem 2rem;
-            }
-        }
-
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            .stats-container { grid-template-columns: 1fr; }
+            .village-details h2 { font-size: 1.8rem; }
+            .email-link { font-size: 1rem; }
         }
 
         .animate {
-            animation: fadeInUp 0.8s ease-out;
+            animation: fadeUp 0.7s ease forwards;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(25px);}
+            to { opacity: 1; transform: translateY(0);}
         }
     </style>
 </head>
 <body>
 
-    <!-- Navigation -->
     <nav>
         <div class="nav-container">
             <div class="logo">
                 <i class="fas fa-shield-alt"></i>
-                <span>Bathala Alarm Security Systems</span>
+                <span class="logo-text">Bathala Security</span>
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="#village-package">Village Protection</a></li>
                 <li><a href="#monitoring">24/7 Monitoring</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
             <div class="mobile-menu">
                 <i class="fas fa-bars"></i>
@@ -735,312 +629,200 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section (Mediterranean focus) -->
     <section class="hero" id="home">
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-badges">
-                    <span class="badge"><i class="fas fa-check-circle"></i> ISO Certified</span>
-                    <span class="badge"><i class="fas fa-clock"></i> 24/7 Monitoring</span>
-                    <span class="badge"><i class="fas fa-home"></i> Filipino Owned</span>
+                    <span class="badge"><i class="fas fa-archway"></i> Pueblo Seguro</span>
+                    <span class="badge"><i class="fas fa-clock"></i> 24/7 Command Center</span>
+                    <span class="badge"><i class="fas fa-tree"></i> Village Heritage</span>
                 </div>
-                <h1>Protecting What Matters Most to <span class="highlight">Filipino Families</span></h1>
-                <p>Security is not just our business—it's our promise to every Filipino household and business. Sleep peacefully knowing Bathala is watching over you.</p>
-                <a href="mailto:bathalaintelligence@gmail.com" class="cta-button">
-                    <i class="fas fa-envelope"></i>
-                    bathalaintelligence@gmail.com
+                <h1>Protect Your <span class="highlight">Home Village</span> with Mediterranean Vigilance</h1>
+                <p>Inspired by the timeless Spanish courtyards and Filipino community spirit — our exclusive village-wide security ensures every family rests under a shield of honor and technology.</p>
+                <a href="#village-package" class="cta-button">
+                    <i class="fas fa-home"></i> Explore Village Package
                 </a>
             </div>
             <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=800" alt="Modern Security System">
+                <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=800" alt="Mediterranean village home security">
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
+    <!-- Stats (local trust) -->
+    <div class="stats">
+        <div class="stats-container">
+            <div class="stat-item"><h3>47+</h3><p>Villages Protected</p></div>
+            <div class="stat-item"><h3>24/7</h3><p>Live Monitoring</p></div>
+            <div class="stat-item"><h3>2min</h3><p>Avg. Response</p></div>
+            <div class="stat-item"><h3>100%</h3><p>Filipino-Owned</p></div>
+        </div>
+    </div>
+
+    <!-- HIGHLIGHT: HOME VILLAGE PACKAGE (only package featured, others removed) -->
+    <div class="village-package-hero" id="village-package">
+        <div class="village-card-premium">
+            <div class="village-details">
+                <h2><i class="fas fa-crown"></i> Home Village Protection Package</h2>
+                <p>Inspired by the Spanish "pueblo" tradition — integrated perimeter security, smart surveillance, and community-wide coordination. Tailored for subdivisions, gated communities, and residential clusters that value collective safety.</p>
+                <ul class="village-feature-list">
+                    <li><i class="fas fa-check-circle"></i> Perimeter Intrusion Detection</li>
+                    <li><i class="fas fa-check-circle"></i> AI CCTV & License Plate Recognition</li>
+                    <li><i class="fas fa-check-circle"></i> Centralized Village Command Hub</li>
+                    <li><i class="fas fa-check-circle"></i> 24/7 SITS Command Center Link</li>
+                    <li><i class="fas fa-check-circle"></i> Mobile Alerts for HOA & Residents</li>
+                    <li><i class="fas fa-check-circle"></i> Guard Patrol Integration</li>
+                    <li><i class="fas fa-check-circle"></i> Emergency Panic Buttons (per zone)</li>
+                </ul>
+                <a href="#contact" class="cta-button" style="background: var(--olive-green); box-shadow: none;">Request Free Village Assessment →</a>
+            </div>
+            <div class="village-img">
+                <img src="https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?auto=format&fit=crop&w=800" alt="Spanish style village security gate">
+            </div>
+        </div>
+    </div>
+
+    <!-- About / why village protection + filipino values -->
+    <section class="about">
         <div class="section-header">
-            <h2>Security Built for Filipinos, By Filipinos</h2>
-            <p>We understand the unique security needs of Filipino families and communities. Your safety is our top priority.</p>
+            <h2>Seguridad con Alma Española · Puso Pilipino</h2>
+            <p>Mediterranean resilience meets Filipino bayanihan — our home village system unites families under one secure roof.</p>
         </div>
         <div class="about-grid">
             <div class="about-image">
-                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800" alt="Filipino Family Home Security">
+                <img src="https://images.unsplash.com/photo-1598228723793-52759bba239c?auto=format&fit=crop&w=800" alt="Andalusian style village entrance">
             </div>
             <div class="about-content">
-                <h3>Para sa Pamilyang Pilipino</h3>
-                <p>At Bathala Alarm Security Systems, we believe that every Filipino family deserves to feel safe in their own home. Whether you live in a bustling city or a peaceful province, our state-of-the-art security solutions are designed with your family's protection in mind.</p>
-                <p>We combine cutting-edge technology with the Filipino values of <strong>pagmamalasakit</strong> (care) and <strong>proteksyon</strong> (protection) to deliver security systems that truly understand your needs.</p>
-                
-                <div class="filipino-values">
-                    <div class="value-item">
-                        <i class="fas fa-heart"></i>
-                        <span>Malasakit sa Pamilya</span>
-                    </div>
-                    <div class="value-item">
-                        <i class="fas fa-users"></i>
-                        <span>Community Protection</span>
-                    </div>
-                    <div class="value-item">
-                        <i class="fas fa-handshake"></i>
-                        <span>Trusted Partnership</span>
-                    </div>
-                    <div class="value-item">
-                        <i class="fas fa-award"></i>
-                        <span>Quality Assurance</span>
-                    </div>
+                <h3>Para sa Barangay, Para sa Inyo</h3>
+                <p>Drawing from the warmth of Spanish plazas and the tight-knit Filipino spirit, Bathala delivers a unified village security framework. Each home becomes a sanctuary, while common areas, gates, and perimeter receive military-grade protection.</p>
+                <p>Our technology integrates seamlessly with homeowners’ associations and local officials — because a safe village is a thriving community.</p>
+                <div class="village-values">
+                    <div class="value-item"><i class="fas fa-hand-sparkles"></i> <span>Community Guardianship</span></div>
+                    <div class="value-item"><i class="fas fa-city"></i> <span>Gated & Open Village Ready</span></div>
+                    <div class="value-item"><i class="fas fa-camera"></i> <span>Smart Perimeter Shields</span></div>
+                    <div class="value-item"><i class="fas fa-leaf"></i> <span>Eco-friendly Systems</span></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="services-container">
-            <div class="section-header">
-                <h2>Security Packages for Every Need</h2>
-                <p>From individual homes to entire villages and commercial establishments, we have the perfect security solution for you.</p>
-            </div>
-            <div class="services-grid">
-                <!-- Household Package -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-home"></i>
-                    </div>
-                    <h3>Household Package</h3>
-                    <p>Complete protection for your family home with smart alarm systems and instant alerts.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Door & Window Sensors</li>
-                        <li><i class="fas fa-check"></i> Motion Detectors</li>
-                        <li><i class="fas fa-check"></i> Mobile App Control</li>
-                        <li><i class="fas fa-check"></i> SMS Alerts</li>
-                        <li><i class="fas fa-check"></i> Professional Installation</li>
-                    </ul>
-                    <a href="mailto:bathalaintelligence@gmail.com" class="cta-button" style="width: 100%; justify-content: center;">
-                        Get Quote
-                    </a>
-                </div>
-
-                <!-- Village Package -->
-                <div class="service-card">
-                    <div class="popular-badge">POPULAR</div>
-                    <div class="service-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <h3>Village Package</h3>
-                    <p>Comprehensive security for subdivisions and gated communities. Protect your entire neighborhood.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Perimeter Security</li>
-                        <li><i class="fas fa-check"></i> CCTV Integration</li>
-                        <li><i class="fas fa-check"></i> Gate Access Control</li>
-                        <li><i class="fas fa-check"></i> Central Monitoring</li>
-                        <li><i class="fas fa-check"></i> 24/7 Guard Coordination</li>
-                    </ul>
-                    <a href="mailto:bathalaintelligence@gmail.com" class="cta-button" style="width: 100%; justify-content: center;">
-                        Get Quote
-                    </a>
-                </div>
-
-                <!-- Business Package -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-store"></i>
-                    </div>
-                    <h3>Business Security</h3>
-                    <p>Protect your livelihood with enterprise-grade security systems designed for Filipino businesses.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Fire & Burglar Alarms</li>
-                        <li><i class="fas fa-check"></i> Video Surveillance</li>
-                        <li><i class="fas fa-check"></i> Access Control</li>
-                        <li><i class="fas fa-check"></i> Panic Buttons</li>
-                        <li><i class="fas fa-check"></i> Business Continuity</li>
-                    </ul>
-                    <a href="mailto:bathalaintelligence@gmail.com" class="cta-button" style="width: 100%; justify-content: center;">
-                        Get Quote
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 24/7 Monitoring Section -->
+    <!-- 24/7 Monitoring (SITS command center) -->
     <section class="monitoring" id="monitoring">
         <div class="monitoring-container">
             <div class="monitoring-content">
-                <h2>Or Subscribe to a 24/7 Professional Command Center Monitoring</h2>
-                <p>Your security never sleeps, and neither do our partners. Through our partnerships with security agencies, companies like <strong>Strategic Intelligence Technology Solutions (SITS)</strong>, your property is monitored around the clock by trained security professionals.</p>
-                
+                <h2>Vigilancia Perpetua · 24/7 Command Center</h2>
+                <p>Your village never sleeps, and neither does our partnership with <strong>Strategic Intelligence Technology Solutions (SITS)</strong>. Every sensor, every camera feeds into a professional command center where trained security analysts watch over your community.</p>
                 <div class="monitoring-features">
-                    <div class="monitoring-feature">
-                        <i class="fas fa-video"></i>
-                        <div>
-                            <strong>Live Video Monitoring</strong>
-                            <p style="margin: 0; font-size: 0.875rem; opacity: 0.9;">Real-time surveillance from our state-of-the-art command center</p>
-                        </div>
-                    </div>
-                    <div class="monitoring-feature">
-                        <i class="fas fa-bolt"></i>
-                        <div>
-                            <strong>Instant Response</strong>
-                            <p style="margin: 0; font-size: 0.875rem; opacity: 0.9;">Immediate coordination with police and emergency services</p>
-                        </div>
-                    </div>
-                    <div class="monitoring-feature">
-                        <i class="fas fa-mobile-alt"></i>
-                        <div>
-                            <strong>Mobile Alerts</strong>
-                            <p style="margin: 0; font-size: 0.875rem; opacity: 0.9;">Get instant notifications on your phone anywhere, anytime</p>
-                        </div>
-                    </div>
-                    <div class="monitoring-feature">
-                        <i class="fas fa-headset"></i>
-                        <div>
-                            <strong>Always Available</strong>
-                            <p style="margin: 0; font-size: 0.875rem; opacity: 0.9;">365 days a year, holidays included</p>
-                        </div>
-                    </div>
+                    <div class="monitoring-feature"><i class="fas fa-eye"></i><div><strong>Live Video Verification</strong><br>Immediate visual confirmation</div></div>
+                    <div class="monitoring-feature"><i class="fas fa-bolt"></i><div><strong>Instant Dispatch</strong><br>Coordination with village patrol & police</div></div>
+                    <div class="monitoring-feature"><i class="fas fa-mobile-alt"></i><div><strong>Real-time Alerts</strong><br>Push notifications to homeowners & HOA</div></div>
+                    <div class="monitoring-feature"><i class="fas fa-church"></i><div><strong>365 Days Vigil</strong><br>Holidays, fiestas, always active</div></div>
                 </div>
-
                 <div class="sits-logo">
-                    <i class="fas fa-satellite-dish"></i>
-                    Powered by Bathala "State of the Art" Command Center 
+                    <i class="fas fa-satellite-dish"></i> Powered by Bathala “State of the Art” Command Center
                 </div>
             </div>
             <div class="monitoring-image">
-                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800" alt="Security Command Center">
+                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800" alt="High-tech security command center">
             </div>
         </div>
     </section>
 
-    <!-- Gallery Section -->
+    <!-- Gallery : Mediterranean village security moments -->
     <section class="gallery">
         <div class="gallery-container">
             <div class="section-header">
-                <h2>Trusted by Filipino Homes & Businesses</h2>
-                <p>See how we protect properties across the Philippines</p>
+                <h2>Villages That Trust Our Shield</h2>
+                <p>From gated estates to hillside communities — Mediterranean protection across the Philippines</p>
             </div>
             <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=400" alt="Home Security System">
-                    <div class="gallery-overlay">
-                        <strong>Residential</strong>
-                        <p style="font-size: 0.875rem;">Smart Home Protection</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=400" alt="Business Security">
-                    <div class="gallery-overlay">
-                        <strong>Commercial</strong>
-                        <p style="font-size: 0.875rem;">Office & Retail</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=400" alt="Command Center">
-                    <div class="gallery-overlay">
-                        <strong>Monitoring</strong>
-                        <p style="font-size: 0.875rem;">SITS Command Center</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=400" alt="Village Security">
-                    <div class="gallery-overlay">
-                        <strong>Village</strong>
-                        <p style="font-size: 0.875rem;">Community Protection</p>
-                    </div>
-                </div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=400" alt="Village security gate"><div class="gallery-overlay">Perimeter Access Control</div></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=400" alt="Spanish style community"><div class="gallery-overlay">Community Harmony</div></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=400" alt="CCTV village monitoring"><div class="gallery-overlay">Smart CCTV Network</div></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=400" alt="Village entrance"><div class="gallery-overlay">Elegant & Safe Entrances</div></div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section: Focused on village inquiries -->
     <section class="contact" id="contact">
         <div class="contact-box">
-            <h2>Ready to Secure Your Property?</h2>
-            <p>Get a free consultation and quote today. Our security experts are ready to help protect what matters most to you.</p>
-            
+            <h2><i class="fas fa-envelope-open-text"></i> Protect Your Village Today</h2>
+            <p>Schedule a no-obligation consultation. Our Mediterranean-inspired security experts will design a custom village protection plan.</p>
             <a href="mailto:bathalaintelligence@gmail.com" class="email-link">
-                <i class="fas fa-envelope"></i>
-                bathalaintelligence@gmail.com
+                <i class="fas fa-envelope"></i> bathalaintelligence@gmail.com
             </a>
-            
-            <p style="margin-top: 1rem; font-size: 0.875rem;">Sales Email</p>
-            
+            <p style="margin: 1rem 0 0.5rem;"><i class="fas fa-phone-alt"></i> Village Hotline: 24/7 Priority</p>
             <div class="contact-hours">
-                <p><i class="fas fa-clock"></i> Available 24/7 for emergencies</p>
-                <p>Office Hours: Monday - Friday, 9:00 AM - 5:00 PM</p>
+                <p><i class="fas fa-clock"></i> Emergency command center: 24/7 · 365 days</p>
+                <p>Mon–Fri: 9:00 AM – 6:00 PM (Village specialist)</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-brand">
                 <h3><i class="fas fa-shield-alt"></i> Bathala Alarm Security Systems</h3>
-                <p>Protecting Filipino Families and Businesses</p>
+                <p>Home Village Protection · Mediterranean Heritage · Filipino Trust</p>
             </div>
-            
             <div class="footer-powered">
                 <i class="fas fa-microchip"></i>
-                <span>Powered by Partners, <strong>ICT Ventures Corp</strong></span>
+                <span>Powered by Partners, <strong>ICT Ventures Corp</strong> & SITS Command Center</span>
             </div>
-            
             <div class="footer-bottom">
-                <p>&copy; Bathala Intelligence. All rights reserved.</p>
-                <p style="margin-top: 0.5rem;">Developed & Designed by <span class="designer">RP8</span></p>
+                <p>© Bathala Intelligence. All rights reserved. | <i class="fas fa-palette"></i> Mediterranean Spanish Theme</p>
+                <p style="margin-top: 0.3rem;">Developed & Designed by <span style="color: var(--sunstone);">RP8</span></p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Smooth scrolling
+        // Mobile menu toggle (functional)
+        const mobileBtn = document.querySelector('.mobile-menu');
+        const navMenu = document.querySelector('.nav-links');
+        if(mobileBtn && navMenu) {
+            mobileBtn.addEventListener('click', () => {
+                if(navMenu.style.display === 'flex') {
+                    navMenu.style.display = 'none';
+                } else {
+                    navMenu.style.display = 'flex';
+                    navMenu.style.position = 'absolute';
+                    navMenu.style.top = '100%';
+                    navMenu.style.left = '0';
+                    navMenu.style.right = '0';
+                    navMenu.style.backgroundColor = '#fff9f0';
+                    navMenu.style.flexDirection = 'column';
+                    navMenu.style.padding = '2rem';
+                    navMenu.style.gap = '1.5rem';
+                    navMenu.style.boxShadow = '0 12px 24px rgba(0,0,0,0.1)';
+                    navMenu.style.zIndex = '999';
+                }
+            });
+        }
+        // Smooth scroll anchor
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+            anchor.addEventListener('click', function(e) {
                 e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+                const targetId = this.getAttribute('href').slice(1);
+                const target = document.getElementById(targetId);
+                if(target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    if(navMenu && navMenu.style.display === 'flex') navMenu.style.display = 'none';
                 }
             });
         });
-
-        // Mobile menu toggle
-        const mobileMenu = document.querySelector('.mobile-menu');
-        const navLinks = document.querySelector('.nav-links');
-        
-        mobileMenu.addEventListener('click', () => {
-            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-            navLinks.style.position = 'absolute';
-            navLinks.style.top = '100%';
-            navLinks.style.left = '0';
-            navLinks.style.right = '0';
-            navLinks.style.background = 'white';
-            navLinks.style.flexDirection = 'column';
-            navLinks.style.padding = '2rem';
-            navLinks.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
-        });
-
-        // Scroll animation
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
+        // scroll animation
+        const animObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
+                if(entry.isIntersecting) {
                     entry.target.classList.add('animate');
-                    observer.unobserve(entry.target);
+                    animObserver.unobserve(entry.target);
                 }
             });
-        }, observerOptions);
-
-        document.querySelectorAll('.service-card, .stat-item, .gallery-item').forEach(el => {
-            observer.observe(el);
-        });
+        }, { threshold: 0.2 });
+        document.querySelectorAll('.service-card, .village-card-premium, .monitoring-feature, .gallery-item, .stat-item').forEach(el => animObserver.observe(el));
     </script>
 </body>
 </html>
